@@ -1,9 +1,9 @@
 name       : profanity
 version    : 0.5.1
-release    : 1
+release    : 2
 source     :
     - http://profanity.im/profanity-0.5.1.tar.gz : e3513713e74ec3363fbdbac2919bdc17e249988780cc5a4589d1425807a7feb8
-license    : GPL-3.0
+license    : GPL-3.0-or-later
 component  : network.im
 summary    : Profanity - A console based XMPP client
 description: |
@@ -17,6 +17,7 @@ description: |
     - Desktop notifications
     - Plugins in Python and C
 builddeps  :
+    - pkgconfig(cmocka)     # check
     - pkgconfig(glib-2.0)
     - pkgconfig(gtk+-2.0)
     - pkgconfig(libcurl)
@@ -29,3 +30,5 @@ build      : |
     %make
 install    : |
     %make_install
+check      : |
+    %make check
