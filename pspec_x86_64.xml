@@ -18,7 +18,7 @@ Feautres:
 - Desktop notifications
 - Plugins in Python and C
 </Description>
-        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://solus-project.com/sources/README.Solus</Archive>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://getsol.us/sources/README.Solus</Archive>
     </Source>
     <Package>
         <Name>profanity</Name>
@@ -43,6 +43,7 @@ Feautres:
             <Path fileType="data">/usr/share/profanity/themes/batman</Path>
             <Path fileType="data">/usr/share/profanity/themes/bios</Path>
             <Path fileType="data">/usr/share/profanity/themes/boothj5</Path>
+            <Path fileType="data">/usr/share/profanity/themes/boothj5_laptop</Path>
             <Path fileType="data">/usr/share/profanity/themes/boothj5_slack</Path>
             <Path fileType="data">/usr/share/profanity/themes/complex</Path>
             <Path fileType="data">/usr/share/profanity/themes/forest</Path>
@@ -74,7 +75,7 @@ Feautres:
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="2">profanity</Dependency>
+            <Dependency release="3">profanity</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/profapi.h</Path>
@@ -82,9 +83,9 @@ Feautres:
         </Files>
     </Package>
     <History>
-        <Update release="2">
-            <Date>2019-01-09</Date>
-            <Version>0.5.1</Version>
+        <Update release="3">
+            <Date>2019-04-14</Date>
+            <Version>0.6.0</Version>
             <Comment>Packaging update</Comment>
             <Name>Pierre-Yves</Name>
             <Email>pyu@riseup.net</Email>

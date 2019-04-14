@@ -1,8 +1,8 @@
 name       : profanity
-version    : 0.5.1
-release    : 2
+version    : 0.6.0
+release    : 3
 source     :
-    - http://profanity.im/profanity-0.5.1.tar.gz : e3513713e74ec3363fbdbac2919bdc17e249988780cc5a4589d1425807a7feb8
+    - https://github.com/boothj5/profanity/releases/download/0.6.0/profanity-0.6.0.tar.gz : f1b2773b79eb294297686f3913e9489c20effae5e3a335c8956db18f6ee2f660
 license    : GPL-3.0-or-later
 component  : network.im
 summary    : Profanity - A console based XMPP client
@@ -22,10 +22,13 @@ builddeps  :
     - pkgconfig(gtk+-2.0)
     - pkgconfig(libcurl)
     - pkgconfig(libnotify)
+    - pkgconfig(libotr)
     - pkgconfig(libstrophe)
     - pkgconfig(ncursesw)
+    - pkgconfig(python3)
+    - libgcrypt-devel
 setup      : |
-    %configure
+    %configure PYTHON_VERSION=%python3_version%
 build      : |
     %make
 install    : |
